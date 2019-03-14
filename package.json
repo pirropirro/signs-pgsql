@@ -1,0 +1,37 @@
+{
+  "name": "signs-pgsql",
+  "version": "0.1.0",
+  "description": "PostgreSQL module for Signs.js",
+  "main": "dist",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pirropirro/signs-pgsql.git"
+  },
+  "author": "pirropirro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pirropirro/signs-pgsql/issues"
+  },
+  "homepage": "https://github.com/pirropirro/signs-pgsql#readme",
+  "dependencies": {
+    "aws-sdk": "^2.395.0",
+    "class-transformer": "^0.1.8",
+    "class-validator": "^0.7.3",
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1",
+    "pg": "^7.8.0",
+    "request": "^2.88.0",
+    "serve-index": "^1.8.0",
+    "sql-template-strings": "^2.2.2",
+    "uuid": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/lodash": "4.14.123",
+    "@types/node-fetch": "^2.1.5",
+    "signs-js": "0.1.0",
+    "typescript": "^3.0.3"
+  }
+}
