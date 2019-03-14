@@ -1,6 +1,6 @@
 {
   "name": "signs-pgsql",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "PostgreSQL module for Signs.js",
   "main": "dist",
   "scripts": {
