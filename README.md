@@ -1,2 +1,3 @@
 # signs-pgsql
-PostgreSQL + RDS module for Signs.js
+
+## PostgreSQL module for Signs.js
