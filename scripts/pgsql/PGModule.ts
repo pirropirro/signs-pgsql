@@ -15,7 +15,7 @@ export class PGModule implements IModule {
             return client;
         }).inSingletonScope();
 
-        container.bind<IPGClient>("ISQLClient").to(PGClient).inSingletonScope();
+        container.bind<IPGClient>("IPGClient").to(PGClient).inSingletonScope();
         container.bind<CRUDRepositoryFactory>("CRUDRepositoryFactory").to(CRUDRepositoryFactory).inSingletonScope();
     }
 }
