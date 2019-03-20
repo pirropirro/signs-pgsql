@@ -3,16 +3,15 @@ import { Request } from "express";
 import { Dictionary } from 'lodash';
 import { plainToClass } from "class-transformer";
 import { injectable, unmanaged } from "inversify";
-import { IController, Route, RouteType, BadRequestException } from "signs-js";
+import { IController, Route, RouteType, BadRequestException, IValidatable } from "signs-js";
 
 import { ICRUDRepository } from "./CRUDRepository";
-import { IValidatable, Constructor } from "../Validatable";
 
 @injectable()
 export abstract class CRUDController<T extends IValidatable & Dictionary<any>> implements IController {
     protected abstract get repository(): ICRUDRepository<T>
 
-    constructor(@unmanaged() private constr: Constructor<T>, @unmanaged() private pk: keyof T) { }
+    constructor(@unmanaged() private constr: new (...args: any[]) => T, @unmanaged() private pk: keyof T) { }
 
     @Route(RouteType.POST, "/")
     async create(req: Request): Promise<T> {
