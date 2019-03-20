@@ -18,8 +18,6 @@
   "homepage": "https://github.com/pirropirro/signs-pgsql#readme",
   "dependencies": {
     "aws-sdk": "^2.395.0",
-    "class-transformer": "^0.1.8",
-    "class-validator": "^0.7.3",
     "lodash": "^4.17.4",
     "moment": "^2.18.1",
     "pg": "^7.8.0",
@@ -31,7 +29,8 @@
   "devDependencies": {
     "@types/lodash": "4.14.123",
     "@types/node-fetch": "^2.1.5",
-    "signs-js": "0.1.0",
+    "@types/pg": "^7.4.13",
+    "signs-js": "0.1.2",
     "typescript": "^3.0.3"
   }
 }
